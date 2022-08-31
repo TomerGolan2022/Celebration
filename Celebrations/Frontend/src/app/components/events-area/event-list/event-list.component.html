@@ -1,0 +1,13 @@
+<div>
+
+    <br>
+    <label>Select Type of Event: </label>
+    <select (change)="display($event)">
+        <option selected disabled>Select Type of Event</option>
+        <option *ngFor="let type of eventsTypes" [value]="type._id">{{type.eventType}}</option>
+    </select>
+    <br><br>
+
+    <app-event-card *ngFor="let e of events" [event]="e"></app-event-card>
+
+</div>

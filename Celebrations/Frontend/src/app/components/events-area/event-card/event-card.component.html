@@ -1,0 +1,10 @@
+<div class="box">
+    <div class="card">
+        <h1 class="card-title">{{event.description}}</h1><br>
+        <div class="card-text"><span class="bolder">Date: </span>{{event.date | date:'yyyy-MM-dd'}} | {{event.date | date:'HH:mm' }} </div><br>
+        <div class="card-text"><span class="bolder">Address: </span>{{event.address}}</div><br>
+        <div class="card-text"><span class="bolder">Guests: </span>{{event.guests}}</div><br>
+        <div class="card-text"><span class="bolder">Did the event take place? </span>{{isTakePlace}}</div><br>
+        <button (click)="deleteEvent(event._id)">🗑️</button>
+    </div>
+</div>

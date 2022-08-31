@@ -1,0 +1,45 @@
+.div {
+    height: 100%;
+    justify-content: center;
+    font-size: x-large;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a .active {
+    color: blueviolet;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+
+:any-link {
+    text-decoration: none;
+}
+
+.header h1 {
+    color: blueviolet;
+    font-size: 350%;
+}
+
+.menu {
+    justify-content: center;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.menu .active {
+    color: blueviolet;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.menu :hover{
+    font-weight: bolder;
+}
+
+.menu > :any-link {
+    text-decoration: none;
+}
